@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POISE - Fashion & Lifestyle Blog</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBg: '#F5ECEC', // Soft blush background matching image border canvas
+                        cardBorder: '#D8D8D8',
+                        poiseBlack: '#1A1A1A',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F5ECEC;
+            color: #1A1A1A;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .serif-font {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        /* Custom border styling for minimalist outline aesthetics */
+        .thin-border {
+            border-color: #D1D1D1;
+        }
+    </style>
+</head>
+<body class="py-6 px-3 sm:px-6 md:px-12 lg:px-24">
+
+    <!-- MAIN CONTAINER WITH WHITE CANVAS & SOFT PINK MARGIN -->
+    <div class="max-w-6xl mx-auto bg-white shadow-sm border border-gray-200">
+
+        <!-- 1. HEADER / NAVIGATION BAR -->
+        <header class="border-b thin-border">
+            <div class="grid grid-cols-1 md:grid-cols-3 items-center text-xs tracking-widest uppercase">
+                <!-- Left Empty / Logo Center on Desktop -->
+                <div class="hidden md:block"></div>
+
+                <!-- Brand Logo (Centered Top) -->
+                <div class="text-center py-4 border-b md:border-b-0 md:border-x thin-border">
+                    <a href="#" class="serif-font text-2xl tracking-[0.3em] font-light text-black">POISE</a>
+                </div>
+
+                <!-- Menu Links & Social Icons -->
+                <div class="flex items-center justify-between md:justify-end px-6 py-4 space-x-6 text-gray-700">
+                    <nav class="flex space-x-6 text-[11px] tracking-[0.2em]">
+                        <a href="#blog" class="hover:text-black transition-colors">BLOG</a>
+                        <a href="#about" class="hover:text-black transition-colors">ABOUT</a>
+                        <a href="#contact" class="hover:text-black transition-colors">CONTACT</a>
+                    </nav>
+                    <div class="flex items-center space-x-3 text-xs text-gray-600">
+                        <a href="#" class="hover:text-black transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-black transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Page Hero Header: "THE BLOG" -->
+            <div class="border-t thin-border text-center py-8 md:py-10">
+                <h1 class="serif-font text-3xl md:text-5xl tracking-[0.25em] font-normal uppercase">THE BLOG</h1>
+            </div>
+        </header>
+
+
+        <!-- 2. BLOG POSTS GRID CAROUSEL -->
+        <section id="blog" class="p-6 md:p-10 border-b thin-border">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Post Card 1 -->
+                <article class="border thin-border bg-white flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Monochromatic outfit model sitting on stool" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.src='https://placehold.co/400x600/E8E8E8/333333?text=Monochromatic+Fashion'">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[9px] text-gray-400 block mb-2 tracking-wider">May 26, 2026</span>
+                            <h2 class="serif-font text-base md:text-lg uppercase tracking-wide leading-tight mb-2">
+                                How to Wear Monochromatic
+                            </h2>
+                            <p class="text-[11px] text-gray-500 font-light leading-relaxed mb-4">
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0 flex justify-between items-center text-gray-400 text-xs">
+                        <span class="flex items-center space-x-1"><i class="fa-regular fa-eye text-[10px]"></i> <span>8</span></span>
+                        <a href="#" class="hover:text-black"><i class="fa-regular fa-heart"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post Card 2 -->
+                <article class="border thin-border bg-white flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Denim jeans style detail" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.src='https://placehold.co/400x600/E8E8E8/333333?text=Denim+Style'">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[9px] text-gray-400 block mb-2 tracking-wider">May 20, 2026</span>
+                            <h2 class="serif-font text-base md:text-lg uppercase tracking-wide leading-tight mb-2">
+                                A New Take on Denim
+                            </h2>
+                            <p class="text-[11px] text-gray-500 font-light leading-relaxed mb-4">
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0 flex justify-between items-center text-gray-400 text-xs">
+                        <span class="flex items-center space-x-1"><i class="fa-regular fa-eye text-[10px]"></i> <span>4</span></span>
+                        <a href="#" class="hover:text-black"><i class="fa-regular fa-heart"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post Card 3 -->
+                <article class="border thin-border bg-white flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Clothing rack with staple wardrobe items" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.src='https://placehold.co/400x600/E8E8E8/333333?text=Autumn+Wardrobe'">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[9px] text-gray-400 block mb-2 tracking-wider">May 16, 2026</span>
+                            <h2 class="serif-font text-base md:text-lg uppercase tracking-wide leading-tight mb-2">
+                                5 Staple Items for Autumn
+                            </h2>
+                            <p class="text-[11px] text-gray-500 font-light leading-relaxed mb-4">
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0 flex justify-between items-center text-gray-400 text-xs">
+                        <span class="flex items-center space-x-1"><i class="fa-regular fa-eye text-[10px]"></i> <span>6</span></span>
+                        <a href="#" class="hover:text-black"><i class="fa-regular fa-heart"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post Card 4 -->
+                <article class="border thin-border bg-white flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+                    <div>
+                        <div class="h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Mediterranean coastal beach view" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.src='https://placehold.co/400x600/E8E8E8/333333?text=Summer+Essentials'">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[9px] text-gray-400 block mb-2 tracking-wider">May 10, 2026</span>
+                            <h2 class="serif-font text-base md:text-lg uppercase tracking-wide leading-tight mb-2">
+                                Timeless Summer Items Every Closet Must Have
+                            </h2>
+                            <p class="text-[11px] text-gray-500 font-light leading-relaxed mb-4">
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0 flex justify-between items-center text-gray-400 text-xs">
+                        <span class="flex items-center space-x-1"><i class="fa-regular fa-eye text-[10px]"></i> <span>11</span></span>
+                        <a href="#" class="hover:text-black"><i class="fa-regular fa-heart"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination Dots / Arrows -->
+            <div class="flex justify-center items-center space-x-3 text-xs text-gray-500 mt-8">
+                <span class="cursor-pointer text-gray-300">&lt;</span>
+                <span class="font-medium text-black cursor-pointer">1</span>
+                <span class="cursor-pointer hover:text-black">2</span>
+                <span class="cursor-pointer hover:text-black">3</span>
+                <span class="cursor-pointer hover:text-black">&gt;</span>
+            </div>
+        </section>
+
+
+        <!-- 3. ABOUT SECTION ("ABOUT MIKAYLA") -->
+        <section id="about" class="p-6 md:p-10 border-b thin-border">
+            <div class="border thin-border grid grid-cols-1 md:grid-cols-12 items-center">
+                <!-- Left Banner Photo -->
+                <div class="md:col-span-7 h-72 sm:h-96 md:h-[420px] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Mikayla Portrait" 
+                         class="w-full h-full object-cover object-top"
+                         onerror="this.src='https://placehold.co/800x600/E5D4CE/333333?text=Mikayla+Portrait'">
+                </div>
+                <!-- Right Bio Text -->
+                <div class="md:col-span-5 p-8 md:p-12 text-center md:text-left flex flex-col justify-center items-center md:items-start">
+                    <h2 class="serif-font text-2xl md:text-3xl tracking-[0.2em] uppercase font-normal mb-4">
+                        ABOUT MIKAYLA
+                    </h2>
+                    <p class="text-xs text-gray-500 font-light leading-relaxed mb-6 max-w-sm">
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double-click me to add your own content and make changes to the font. It's a great place for you to tell a story and let your users know a little more about you.
+                    </p>
+                    <a href="#" class="bg-black text-white text-[10px] tracking-[0.2em] uppercase px-6 py-3 hover:bg-gray-800 transition-colors">
+                        Get to Know Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. INSTAGRAM / SOCIAL GRID ("FOLLOW ME ELSEWHERE") -->
+        <section class="p-6 md:p-10 border-b thin-border">
+            <div class="text-center mb-8">
+                <h2 class="serif-font text-xl md:text-2xl tracking-[0.25em] uppercase font-normal">
+                    FOLLOW ME ELSEWHERE
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+                <!-- Insta item 1 -->
+                <div class="aspect-square overflow-hidden border thin-border group relative">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=400&q=80" 
+                         alt="Fashion look" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <!-- Insta item 2 -->
+                <div class="aspect-square overflow-hidden border thin-border group relative">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" 
+                         alt="Lifestyle coffee aesthetic" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <!-- Insta item 3 -->
+                <div class="aspect-square overflow-hidden border thin-border group relative">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80" 
+                         alt="Outfit linen detail" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <!-- Insta item 4 -->
+                <div class="aspect-square overflow-hidden border thin-border group relative">
+                    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=400&q=80" 
+                         alt="Denim jeans style" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <!-- Insta item 5 -->
+                <div class="aspect-square overflow-hidden border thin-border group relative">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80" 
+                         alt="Minimalist Architecture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <!-- Insta item 6 -->
+                <div class="aspect-square overflow-hidden border thin-border group relative">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80" 
+                         alt="Pink leather handbag" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. SHOP MY LOOK SECTION -->
+        <section class="p-6 md:p-10 border-b thin-border">
+            <div class="text-center mb-8">
+                <h2 class="serif-font text-xl md:text-2xl tracking-[0.25em] uppercase font-normal">
+                    SHOP MY LOOK
+                </h2>
+            </div>
+
+            <div class="border thin-border grid grid-cols-1 md:grid-cols-12">
+                <!-- Left Feature Box: Pink Bag Card -->
+                <div class="md:col-span-5 p-8 flex items-center justify-center bg-white border-b md:border-b-0 md:border-r thin-border">
+                    <div class="bg-[#E5C3C6] p-4 sm:p-6 w-56 sm:w-64 relative text-center shadow-sm">
+                        <span class="bg-black text-white text-[9px] uppercase tracking-widest px-3 py-1 inline-block mb-3">Shop Item</span>
+                        <div class="aspect-square overflow-hidden mb-2 bg-white">
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=80" 
+                                 alt="Dusty Pink Leather Bag" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.src='https://placehold.co/400x400/E8C3C6/FFFFFF?text=Shop+Bag'">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Feature Banner: Model holding handbag -->
+                <div class="md:col-span-7 h-72 sm:h-96 md:h-auto overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Woman carrying dusty pink handbag" 
+                         class="w-full h-full object-cover"
+                         onerror="this.src='https://placehold.co/800x600/D4B8B0/333333?text=Shop+Look+Banner'">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 6. FOOTER & NEWSLETTER -->
+        <footer id="contact" class="p-6 md:p-10 bg-white">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Brand & Nav -->
+                <div class="md:col-span-4 flex flex-col space-y-4">
+                    <h3 class="serif-font text-xl tracking-[0.3em] font-light">POISE</h3>
+                    <nav class="flex flex-col space-y-1 text-[11px] tracking-[0.2em] text-gray-600">
+                        <a href="#blog" class="hover:text-black">BLOG</a>
+                        <a href="#about" class="hover:text-black">ABOUT</a>
+                        <a href="#contact" class="hover:text-black">CONTACT</a>
+                    </nav>
+                    <div class="flex space-x-3 text-xs text-gray-500 pt-2">
+                        <a href="#" class="hover:text-black"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-black"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Newsletter Form -->
+                <div class="md:col-span-8 flex flex-col justify-end md:items-end">
+                    <div class="w-full max-w-md">
+                        <h4 class="serif-font text-lg tracking-wider mb-2 font-light">Don't miss the fun.</h4>
+                        <form onsubmit="event.preventDefault();" class="flex flex-col sm:flex-row gap-2">
+                            <div class="flex-grow">
+                                <label for="email" class="sr-only">Enter your email here</label>
+                                <input type="email" id="email" placeholder="Enter your email here *" 
+                                       class="w-full border thin-border px-3 py-2 text-xs focus:outline-none focus:border-black placeholder-gray-400">
+                            </div>
+                            <button type="submit" class="bg-black text-white text-[10px] tracking-[0.2em] uppercase px-6 py-2.5 hover:bg-gray-800 transition-colors">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Notice -->
+            <div class="mt-12 pt-6 border-t thin-border text-center text-[10px] text-gray-400 tracking-wider">
+                © 2026 Be Poise. Proudly Created with Web.
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
